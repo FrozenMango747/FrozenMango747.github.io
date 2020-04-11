@@ -1,0 +1,97 @@
+body {
+margin: 0 ;
+}
+body {
+  overscroll-behavior-y: none;
+}
+
+.mainbody {
+padding: 20px;
+}
+
+.displaytitle {
+background-color: #45d15e;
+padding: 15px 20px;
+
+}
+
+  /* Add a black background color to the top navigation */
+.topnav {
+background-color: #000000;
+overflow: hidden;
+align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: #8ad195;
+color: black;
+}
+
+/* the second level menu */
+
+  /* Add a light green background color to the top navigation */
+.topnav2 {
+background-color: #8ad195;
+overflow: hidden;
+align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav2 a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav2 a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav2 a.active {
+background-color: #8ad195;
+color: black;
+}
+
+.button {
+  background-color: #45d15e;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #000000;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
