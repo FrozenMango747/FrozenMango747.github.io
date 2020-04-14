@@ -1,5 +1,5 @@
 document.write(`<div class="displaytitle">
-<h1  align="center" ><a style="text-decoration:none;color:#000000" href="http://frozenmango747.github.io/math-courses/home">Frozen Mango 747</a></h1>
+<h1  align="center" ><a style="text-decoration:none;color:#000000" href="http://frozenmango747.github.io/">Frozen Mango 747</a></h1>
 </div><div class="topnav">
   <!-- add class="active" to current page-->
   <a id="homeM" href="https://frozenmango747.github.io/">Home</a>
