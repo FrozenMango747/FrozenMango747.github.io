@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encryption Tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://raw.githack.com/brython-dev/brython/master/www/src/brython.js"></script>
+</head>
+<body onload="brython()">
+<a href="about.html">Learn more about the Finger Cipher here.</a>
+<script type="text/python" src="FingerCipher.py"></script>
+<script type="text/python" src="fingerTool.py"></script>
+<p>Alphabet</p><textarea id="alpha" rows="2" cols="50"></textarea> <p id="" <button id="resetTable" class="button">Reset</button><pre></pre>
+<div class="row">
+    <div class="column">
+        <p>Message:</p><textarea id="ezone" rows="2" cols="10"></textarea>
+<p>Key:</p><textarea id="ezone2" rows="2" cols="10"></textarea>
+<pre></pre>
+<button id="ebutton" class="button">Encrypt</button>
+<p id="eresult"></p>
+    </div>
+    <div class="column">
+        <p>Message:</p><textarea id="dzone" rows="2" cols="10"></textarea>
+<p>Key:</p><textarea id="dzone2" rows="2" cols="10"></textarea>
+<pre></pre>
+<button id="dbutton" class="button">Decrypt</button>
+<p id="dresult"></p>
+    </div>
+</div>
+</body>
+</html>
