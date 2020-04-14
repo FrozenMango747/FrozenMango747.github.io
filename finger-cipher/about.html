@@ -8,25 +8,24 @@
     <script type="text/javascript" src="menu.js"></script>
     <script type="text/javascript"> document.getElementById("fcabt").className="active";</script>
 </head>
-<body>
-<h1>About the Finger Cipher</h1>
-<a href="encryption-tool.html">You can use this tool to encrypt and decrypt.</a>
-    <h2>Encryption table</h2>
-    <ul>
-        <li>00-25: Lowercase Alphabet</li>
-        <li>26-51: Uppercase Alphabet</li>
-        <li>52-61: Digits 0-9</li>
-        <li>62-99: .,’”!?/</space>[]{}()+-=_*~`><|$&@#^%∆√:;≠</li>
-
-    <h2>Encryption</h2>
-    <p>The encryption process uses two inputs: the plaintext and the keyword / key. 
+<body class="custbody">
+    <div class="mainbody">    
+        <h1>About the Finger Cipher</h1>
+        <a href="encryption-tool.html">You can use this tool to encrypt and decrypt.</a>
+        <h2>Encryption table</h2>
+        <ul>
+            <li>00-25: Lowercase Alphabet</li>
+            <li>26-51: Uppercase Alphabet</li>
+            <li>52-61: Digits 0-9</li
+            <li>62-99: .,’”!?/</space>[]{}()+-=_*~`><|$&@#^%∆√:;≠</li>
+        <h2>Encryption</h2>
+        <p>The encryption process uses two inputs: the plaintext and the keyword / key. 
     If the keyword is shorter than the plaintext, cycle through the characters until the string is long enough.
     If using a key (the U.S. Constitution, for example), trim it to the length of the plaintext. 
     The result will be referenced later as the ‘keyphrase’.</p>
-    <p>For an example, we’ll encrypt ‘El33t’ (5 characters) with ‘Oh say can you see’ (18 characters),
+        <p>For an example, we’ll encrypt ‘El33t’ (5 characters) with ‘Oh say can you see’ (18 characters),
     which we trim to ‘Oh sa’ (5 characters).</p>
-
-    <h3>Step 1</h3>
+        <h3>Step 1</h3>
     <p>Convert both the plaintext and the keyphrase to numerical values using the table above.</p>
     <ul>
         <li>El33t - [30 11 55 55 19]</li>
@@ -47,5 +46,6 @@
     <p class="center">“ qz,t”</p>
 
     <p>(notice the space as the first character)</p>
+    </div>
 </body>
 </html>
