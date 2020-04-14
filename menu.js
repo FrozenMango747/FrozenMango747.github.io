@@ -6,6 +6,6 @@ document.write(`<div class="displaytitle">
   <a id="ifgM" href="IF-games">IF Games</a>
   <a id="mcM" href="math-courses">Math Courses</a>
   <a id="thM" href="treasure-hunt">Treasure Hunt</a>
-  <a id="thM" href="finger-cipher/about">Finger Cipher</a>
+  <a id="fcM" href="finger-cipher/about">Finger Cipher</a>
   <a id="abtM" href="about">About</a>
 </div>`)
