@@ -16,15 +16,15 @@
     <script type="text/python" src="FingerCipher.py"></script>
     <script type="text/python" src="fingerTool.py"></script>
     <script type="text/javascript">
-        function copyText() {
+        function copyText(element) {
   /* Get the text field */
-  var text = document.getElementById("eresult").innerHTML;
+  var text = document.getElementById(element).innerHTML;
 
   navigator.clipboard.writeText(text);
         }
-        function pasteText() {
+        function pasteText(element) {
   navigator.clipboard.readText().then(
-  clipText => document.getElementById("dzone").innerText = clipText);
+  clipText => document.getElementById(element).innerText = clipText);
         }
     </script>
     <p>Alphabet</p><textarea id="alpha" rows="2" cols="50"></textarea><pre></pre>
@@ -38,15 +38,17 @@
         <pre></pre>
         <button id="ebutton" class="button">Encrypt</button>
         <p id="eresult"></p>
-        <button class="button" onclick="copyText()">Copy</button>
+        <button class="button" onclick="copyText('eresult')">Copy</button>
     </div>
     <div class="column">
         <h2> Decrypt</h2>
-        <p>Message:</p><button class="button" onclick="pasteText()">Paste</button><textarea id="dzone" rows="10" cols="50"></textarea>
+        <p>Message:</p><button class="button" onclick="pasteText('dzone')">Paste</button>
+        <textarea id="dzone" rows="10" cols="50"></textarea>
 <p>Key:</p><textarea id="dzone2" rows="10" cols="50"></textarea>
 <pre></pre>
 <button id="dbutton" class="button">Decrypt</button>
 <p id="dresult"></p>
+        <button class="button" onclick="copyText('dresult')">Copy</button>
     </div>
 </div>
 </body>
