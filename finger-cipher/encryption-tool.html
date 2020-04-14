@@ -23,10 +23,8 @@
   navigator.clipboard.writeText(text);
         }
         function pasteText() {
-  /* Get the text field */
-  var text = navigator.clipboard.readText();
-
-  document.getElementById("dzone").value = text;
+  navigator.clipboard.readText().then(
+  clipText => document.getElementById("dzone").innerText = clipText);
         }
     </script>
     <p>Alphabet</p><textarea id="alpha" rows="2" cols="50"></textarea><pre></pre>
