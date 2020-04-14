@@ -18,14 +18,9 @@
     <script type="text/javascript">
         function copyText() {
   /* Get the text field */
-  var text = document.getElementById("eresult");
+  var text = document.getElementById("eresult").innerHTML;
 
-  /* Select the text field */
-  text.select();
-  text.setSelectionRange(0, 99999); /*For mobile devices*/
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
+  navigator.clipboard.writeText(text);
         }
     </script>
     <p>Alphabet</p><textarea id="alpha" rows="2" cols="50"></textarea><pre></pre>
