@@ -22,6 +22,12 @@
 
   navigator.clipboard.writeText(text);
         }
+        function pasteText() {
+  /* Get the text field */
+  var text = navigator.clipboard.readText();
+
+  document.getElementById("dzone").value = text;
+        }
     </script>
     <p>Alphabet</p><textarea id="alpha" rows="2" cols="50"></textarea><pre></pre>
     <button id="resetTable" class="button">Reset</button><pre></pre>
@@ -36,7 +42,7 @@
         <button class="button" onclick="copyText()">Copy</button>
     </div>
     <div class="column">
-        <p>Message:</p><textarea id="dzone" rows="10" cols="50"></textarea>
+        <p>Message:</p><button class="button" onclick="pasteText()">Paste</button><textarea id="dzone" rows="10" cols="50"></textarea>
 <p>Key:</p><textarea id="dzone2" rows="10" cols="50"></textarea>
 <pre></pre>
 <button id="dbutton" class="button">Decrypt</button>
