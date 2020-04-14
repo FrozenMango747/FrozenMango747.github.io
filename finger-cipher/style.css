@@ -11,3 +11,10 @@
 .button:hover {
   background-color: #000000;
 }
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
