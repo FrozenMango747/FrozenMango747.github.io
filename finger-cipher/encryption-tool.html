@@ -15,6 +15,19 @@
     <a href="about.html">Learn more about the Finger Cipher here.</a>
     <script type="text/python" src="FingerCipher.py"></script>
     <script type="text/python" src="fingerTool.py"></script>
+    <script type="text/javascript">
+        function copyText() {
+  /* Get the text field */
+  var copyText = document.getElementById("eresult");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+        }
+    </script>
     <p>Alphabet</p><textarea id="alpha" rows="2" cols="50"></textarea><pre></pre>
     <button id="resetTable" class="button">Reset</button><pre></pre>
     </div>
@@ -25,6 +38,7 @@
         <pre></pre>
         <button id="ebutton" class="button">Encrypt</button>
         <p id="eresult"></p>
+        <button onclick="copyText()">Copy</button>
     </div>
     <div class="column">
         <p>Message:</p><textarea id="dzone" rows="10" cols="50"></textarea>
