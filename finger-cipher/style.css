@@ -80,9 +80,9 @@ color: black;
   flex: 50%;
 }
 
-  /* Add a light green background color to the top navigation */
+  /* Add a light yellow background color to the top navigation */
 .topnav2 {
-background-color: #8ad195;
+background-color: #ffdb72;
 overflow: hidden;
 align: center;
 }
