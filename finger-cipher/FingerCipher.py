@@ -1,6 +1,6 @@
 deftable = [chr(i) for i in range(97, 123)] + [chr(i) for i in range(65, 91)] + [chr(i) for i in range(48, 58)] + [i for i
                                                                                                                 in
-                                                                                                                '.,’”!?/\ []{}()+-=_*~`><|$&@#^%∆√\t\n:;≠']
+                                                                                                                '''.,’”!?/\ []{}()+-=_*~`><|$&@#^%∆√\t-:;≠''']
 
 
 # print(table)
