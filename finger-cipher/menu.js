@@ -11,5 +11,5 @@ document.write(`<div class="displaytitle">
 </div>
 <div class="topnav2">
 <a id="fcetM" href="http://frozenmango747.github.io/finger-cipher/encryption-tool">Encryption</a>
-  <a id="fcabtM" href="http://frozenmango747.github.io/finger-cipher/about">About</a>
+  <a id="fcabtM" href="http://frozenmango747.github.io/finger-cipher/about.html">About</a>
 </div>`)
