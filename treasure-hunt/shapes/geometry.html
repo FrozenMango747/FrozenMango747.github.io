@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html style = "font-family:geneva,arial,helvetica;background-color: black">
+<head>
+  <meta charset="utf-8">
+  <title>GO met tree</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="icon" href="../../favicon.png">
+</head>
+
+<body id="bod">
+<script>
+
+        // Convert to 32bit integer
+function stringToHash(string) {
+    if (string == null){return 0;}
+    var hash = 0;
+    if (string.length == 0) return hash;
+    for (i = 0; i < string.length; i++) {
+        char = string.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash;
+    }
+    return hash;
+}
+function check() {
+    var person = prompt("Please enter the password", "");
+    if (stringToHash(person) != "96586" || person == null || person == ''){check();}
+    }
+
+    check();
+</script>
+<div class="mainbody">
+    <a><font color="white" size="10" face="Geneva"><strong>9</strong></font></a>
+    <p><font color="white" size="8" face="Geneva">This is a placeholder. Level 9 is still under construction.</font></p>
+
+</div>
+</body>
+</html>
