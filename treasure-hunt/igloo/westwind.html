@@ -18,6 +18,27 @@
     <link rel="icon" href="../../favicon.png">
 </head>
 <body id="bod" >
+<script>
+
+        // Convert to 32bit integer
+function stringToHash(string) {
+    if (string == null){return 0;}
+    var hash = 0;
+    if (string.length == 0) return hash;
+    for (i = 0; i < string.length; i++) {
+        char = string.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash;
+    }
+    return hash;
+}
+function check() {
+    var person = prompt("Please enter the password", "");
+    if (stringToHash(person) != "2147321520" || person == null || person == ''){check();}
+    }
+
+    check();
+</script>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8RT8FG"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="mainbody">
