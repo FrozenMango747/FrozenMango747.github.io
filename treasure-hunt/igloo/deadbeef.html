@@ -13,7 +13,7 @@
 </script>
   <meta charset="utf-8">
     <meta name="robots" content="noindex" />
-  <title>Placeholder</title>
+  <title>Final Stop</title>
     <link rel="stylesheet" type="text/css" href="../../style.css">
     <link rel="icon" href="../../favicon.png">
 </head>
@@ -21,9 +21,38 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8RT8FG"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="mainbody">
+    <script>
+
+        // Convert to 32bit integer
+function stringToHash(string) {
+    if (string == null){return 0;}
+    var hash = 0;
+    if (string.length == 0) return hash;
+    for (i = 0; i < string.length; i++) {
+        char = string.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash;
+    }
+    return hash;
+}
+function check() {
+    var person = prompt("Please enter the password", "");
+    if (stringToHash(person) != "-1129862548" || person == null || person == ''){check();}
+    }
+
+    check();
+</script>
     <a><font color="white" size="10" face="Geneva"><strong>18</strong></font></a>
 
-<p><font color="white" size="6" face="Geneva">Under Construction.</font></p>
+<p><font color="white" size="6" face="Geneva">Find me.</font></p>
+    <font color="white" size="6" face="Geneva"><ul>
+        <li>I am perched high above, but my guard is from far below</li>
+        <li>He who guards me is clad in the color of lemon</li>
+        <li>I may look like chocolate, but looks ar decieving</li>
+        <li>I hide from you, but I hide behind your laughter.</li>
+        <li>Find me, and you will enjoy me.</li>
+        <li>Go, go on! Don't keep staring at the screen? How long has it been?! Screenager....</li>
+    </ul></font>
 
 
 
